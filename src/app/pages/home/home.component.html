@@ -1,0 +1,32 @@
+<h2>Virtual-Scroll!</h2>
+
+<div class="row">
+    <div class="col">
+        <button class="btn btn-outline-primary" ng (click)="irFinal()">Ir a Final</button>
+    </div>
+</div>
+
+<hr>
+
+<cdk-virtual-scroll-viewport itemSize="50" class="example-viewport animated fadeIn">
+    <div *cdkVirtualFor="let item of items;let i=index;let conteo=count;" class="example-item">
+        Item: {{i}} / {{conteo}}
+    </div>
+</cdk-virtual-scroll-viewport>
+
+<hr>
+
+<h2>Drag-Drop!</h2>
+
+<ul class="list-group" cdkDropList>
+    <li class="list-group-item" *ngFor="let pais of paises" cdkDrag>{{pais.name}}</li>
+</ul>
+
+<div class="caja" cdkDrag>
+    dra
+</div>
+
+<br>
+<br>
+<br>
+<br>
