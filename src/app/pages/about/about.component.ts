@@ -22,6 +22,7 @@ export class AboutComponent implements OnInit {
     this._userService.getUsers().subscribe((users: IUser[]) => {
       this.users = users;
       // Mensaje
+      // Rama-2
       console.log(this.users);
     });
   }
