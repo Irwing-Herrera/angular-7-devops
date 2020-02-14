@@ -22,12 +22,9 @@ export class AboutComponent implements OnInit {
     this._userService.getUsers().subscribe((users: IUser[]) => {
       this.users = users;
       // Mensaje
-<<<<<<< HEAD
       // de
       // Rama Develop
-=======
       // Rama-2
->>>>>>> Rama-2
       console.log(this.users);
     });
   }
