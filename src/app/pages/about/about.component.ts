@@ -21,6 +21,7 @@ export class AboutComponent implements OnInit {
   getUsers() {
     this._userService.getUsers().subscribe((users: IUser[]) => {
       this.users = users;
+      // Mensaje
       console.log(this.users);
     });
   }
